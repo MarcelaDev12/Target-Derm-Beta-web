@@ -4,7 +4,7 @@ import Button from './Button'
 
 describe('<Button />', () => {
   it('renders component with button role', () => {
-    render(<Button>submit</Button>)
+    render(<Button>Submit</Button>)
     expect(screen.getByRole('button')).toBeInTheDocument()
     expect(screen.getByRole('button')).toHaveClass('button')
   })
@@ -12,7 +12,7 @@ describe('<Button />', () => {
   it('renders as anchor tag', () => {
     render(
       <Button asLink href="/">
-        submit
+        Enter
       </Button>
     )
     expect(screen.getByRole('link')).toBeInTheDocument()
