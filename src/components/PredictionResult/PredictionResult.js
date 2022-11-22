@@ -20,7 +20,7 @@ function PredictionResult({ prediction, description }) {
         ) : (
           <>
             <img src={track} alt="Visão geral" />
-            
+            No alvo!
           </>
         )}
       </h4>

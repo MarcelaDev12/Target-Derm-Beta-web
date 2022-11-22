@@ -29,7 +29,7 @@ function FormUpload() {
           <section className={styles.wrapper}>
             <div className={styles.buttonGroup}>
               <Button {...getRootProps()} shine>
-                Analisar outra imagem
+                Enviar outra imagem
               </Button>
               <input {...getInputProps()} />
             </div>
@@ -40,7 +40,7 @@ function FormUpload() {
 
             {error && (
               <Alert type="danger">
-                Falha ao escanear a imagem, tente novamente de outro ângulo.
+                Boas condições de luz e foco resulta em maior certeza na predição.
               </Alert>
             )}
           </section>
