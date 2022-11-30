@@ -31,7 +31,14 @@ function PredictionResult({ prediction, description }) {
       </ProgressBar>
 
       <p className={styles.description}>
-        {!description.error && !description.desc && <span>Buscando na internet informações úteis sobre a doença...</span>}
+        {!description.error && !description.desc && (
+          <span>
+            Doença na qual as células da pele se acumulam e formam escamas e
+            manchas secas que causam coceira. Acredita-se que a psoríase seja um
+            problema do sistema imunológico. Os gatilhos incluem infecções,
+            estresse e frio.
+          </span>
+        )}
         {!description.error && description.desc && (
           <>
             {description.desc}
